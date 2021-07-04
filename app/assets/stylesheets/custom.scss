@@ -1,0 +1,127 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  line-height: 1em;
+}
+
+/* header -------------------------------------------------- */
+
+header {
+  z-index: 10;
+  position: fixed; /*絶対位置 スクロールしても位置が固定*/
+  top: 0;
+  vertical-align: middle; /* 上下中央に寄せる */ 
+  line-height: 48px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2); /*若干浮き上がって見せる*/
+  background-color: dimgray;
+}
+
+.header-logo {
+  float: left;
+  font-size: 23px;
+  a {
+    padding-left: 20px;
+    vertical-align: middle; /* 上下中央に寄せる */ 
+    color: deepskyblue;
+  }
+}
+
+.header-menus {
+  float: right; //右に寄せて左側に次の要素を配置
+  list-style: none; /*マーク非表示*/
+  a {
+    margin-right: 15px;
+    padding: 10px;
+    vertical-align: middle; /* 上下中央に寄せる */ 
+    background-color: gray;
+    font-size: 18px;
+    color: white;
+  }
+}
+
+/* body -------------------------------------------------- */
+
+.body-content {
+  margin-top: 100px; /*ヘッダーに重ならない高さ*/
+}
+
+.wrapper {
+  margin: 0 1%;
+  padding: 20px;
+  width: 98%;
+  background-color: gainsboro;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+form {
+  font-size: 18px;
+  list-style: none; /*マーク非表示*/
+  label {
+    display: block;
+  }
+  input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px; 
+  }
+  input[type="time"] {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  input[type="submit"] {
+    display: block;
+    height: 40px;
+  }
+}
+
+.btn {
+  border-radius: 3px;
+  background-color: red;
+  box-shadow: 0 7px darken(red, 10%); /*ボタンの影は元の色から若干暗めに設定*/
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+}
+
+//validate検知時
+// .field_with_errors {
+//   padding: 2px;
+//   background-color: red;
+//   display: table;
+// }
+
+// #error_explanation {
+//   width: 450px;
+//   border: 2px solid red;
+//   padding: 7px 7px 0;
+//   margin-bottom: 20px;
+//   background-color: #f0f0f0;
+//   h2 {
+//     text-align: left;
+//     font-weight: bold;
+//     padding: 5px 5px 5px 15px;
+//     font-size: 12px;
+//     margin: -7px -7px 0;
+//     background-color: #c00;
+//     color: #fff;
+//   }
+//   ul li {
+//     font-size: 12px;
+//     list-style: square;
+//   }
+// }

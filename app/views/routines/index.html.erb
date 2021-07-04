@@ -1,0 +1,22 @@
+<%= javascript_pack_tag 'routines/index' %>
+
+<table id="index">
+  <thead>
+    <tr>
+      <th class="column-no">No</th>
+      <th class="column-start-time">開始時刻</th>
+      <th class="column-end-time">終了時刻</th>
+      <th class="column-content">内容</th>
+    </tr>
+  <thead>
+  <tbody>
+    <% @routines.each_with_index do |routine, i| %>
+      <tr data-id=<%= routine.id %>>
+        <td><%= (i + 1) %></td>
+        <td><%= routine.start_time_str %></td>
+        <td><%= routine.end_time_str %></td>
+        <td><%= routine.content %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+<div class="show-content">
+  <p class="show-content-label">開始時刻</p>
+  <p class="show-content-text"><%= @routine.start_time_str %></p>
+  
+  <p class="show-content-label">終了時刻</p>
+  <p class="show-content-text"><%= @routine.end_time_str %></p>
+  
+  <p class="show-content-label">内容</p>
+  <p class="show-content-text"><%= @routine.content %></p>
+  
+  <%= link_to "編集",  edit_routine_path, { class: "btn" } %>
+  <%= link_to "削除",  routine_path, { method: "delete", class: "btn" } %>
+</div>

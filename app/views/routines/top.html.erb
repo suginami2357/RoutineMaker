@@ -1,0 +1,20 @@
+<div class="#">
+  <table id="index">
+  <thead>
+    <tr>
+      <th id="clock" class="clock"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @routines.each_with_index do |routine, i| %>
+      <tr>
+        <input class="end_time" type="hidden" value=<%= routine.end_time_str %>>
+        <td><%= routine.content %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  
+</div>
+
+<%= javascript_pack_tag 'routines/home', defer: true %>

@@ -1,0 +1,10 @@
+<%= form_with(model: @user, local: true) do |form| %>
+
+  <%= form.label :email, "メールアドレス" %>
+  <%= form.email_field :email %>
+  
+  <%= form.label :password, "パスワード" %>
+  <%= form.password_field :password %>
+
+  <%= form.submit yield(:button_text),  data: { "disable-with": yield(:button_text) } , class: 'btn' %>
+<% end %>
