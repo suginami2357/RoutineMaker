@@ -945,15 +945,10 @@
     "@types/estree" "*"
     "@types/json-schema" "*"
 
-"@types/estree@*":
+"@types/estree@*", "@types/estree@^0.0.48":
   "integrity" "sha512-LfZwXoGUDo0C3me81HXgkBg5CTQYb6xzEl+fNmbO4JdRiSKQ8A0GD1OBBvKAIsbCUgoyAty7m99GqqMQe784ew=="
   "resolved" "https://registry.npmjs.org/@types/estree/-/estree-0.0.48.tgz"
   "version" "0.0.48"
-
-"@types/estree@^0.0.47":
-  "integrity" "sha512-c5ciR06jK8u9BstrmJyO97m+klJrrhCf9u3rLu3DEAJBirxRqSCvDQoYKmxuYwQI5SZChAWu+tq9oVlGRuzPAg=="
-  "resolved" "https://registry.npmjs.org/@types/estree/-/estree-0.0.47.tgz"
-  "version" "0.0.47"
 
 "@types/glob@^7.1.1":
   "integrity" "sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w=="
@@ -1139,10 +1134,10 @@
     "mime-types" "~2.1.24"
     "negotiator" "0.6.2"
 
-"acorn@^8.2.1":
-  "integrity" "sha512-ULr0LDaEqQrMFGyQ3bhJkLsbtrQ8QibAseGZeaSUiT/6zb9IvIkomWHJIvgvwad+hinRAgsI51JcWk2yvwyL+w=="
-  "resolved" "https://registry.npmjs.org/acorn/-/acorn-8.4.0.tgz"
-  "version" "8.4.0"
+"acorn@^8.4.1":
+  "integrity" "sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA=="
+  "resolved" "https://registry.npmjs.org/acorn/-/acorn-8.4.1.tgz"
+  "version" "8.4.1"
 
 "ajv-errors@^1.0.0":
   "integrity" "sha512-DCRfO/4nQ+89p/RK43i8Ezd41EqdGIU4ld7nGF8OQ14oc/we5rEntLCUa7+jrn3nn83BosfwZA0wb4pon2o8iQ=="
@@ -2387,10 +2382,10 @@
   dependencies:
     "is-arrayish" "^0.2.1"
 
-"es-module-lexer@^0.4.0":
-  "integrity" "sha512-ooYciCUtfw6/d2w56UVeqHPcoCFAiJdz5XOkYpv/Txl1HMUozpXjz/2RIQgqwKdXNDPSF1W7mJCFse3G+HDyAA=="
-  "resolved" "https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-0.4.1.tgz"
-  "version" "0.4.1"
+"es-module-lexer@^0.6.0":
+  "integrity" "sha512-f8kcHX1ArhllUtb/wVSyvygoKCznIjnxhLxy7TCvIiMdT7fL4ZDTIKaadMe6eLvOXg6Wk02UeoFgUoZ2EKZZUA=="
+  "resolved" "https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-0.6.0.tgz"
+  "version" "0.6.0"
 
 "escalade@^3.1.1":
   "integrity" "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw=="
@@ -4636,7 +4631,7 @@
   "resolved" "https://registry.npmjs.org/tapable/-/tapable-2.2.0.tgz"
   "version" "2.2.0"
 
-"terser-webpack-plugin@^5.0.3", "terser-webpack-plugin@^5.1.1":
+"terser-webpack-plugin@^5.0.3", "terser-webpack-plugin@^5.1.3":
   "integrity" "sha512-cxGbMqr6+A2hrIB5ehFIF+F/iST5ZOxvOmy9zih9ySbP1C2oEWQSOUS+2SNBTjzx5xLKO4xnod9eywdfq1Nb9A=="
   "resolved" "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-5.1.3.tgz"
   "version" "5.1.3"
@@ -4857,7 +4852,7 @@
     "schema-utils" "^3.0"
     "tapable" "^2.0"
 
-"webpack-cli@^4.2.0", "webpack-cli@^4.7.2", "webpack-cli@4.x.x":
+"webpack-cli@^4.2.0", "webpack-cli@4.x.x":
   "integrity" "sha512-mEoLmnmOIZQNiRl0ebnjzQ74Hk0iKS5SiEEnpq3dRezoyR3yPaeQZCMCe+db4524pj1Pd5ghZXjT41KLzIhSLw=="
   "resolved" "https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.7.2.tgz"
   "version" "4.7.2"
@@ -4958,21 +4953,21 @@
     "source-list-map" "^2.0.1"
     "source-map" "^0.6.1"
 
-"webpack@^4.0.0 || ^5.0.0", "webpack@^5.1.0", "webpack@^5.11.0", "webpack@^5.2.0", "webpack@^5.39.0", "webpack@>=2", "webpack@>=4.44.2", "webpack@4.x.x || 5.x.x":
-  "integrity" "sha512-25CHmuDj+oOTyteI13sUqNlCnjCnySuhiKWE/cRYPQYeoQ3ijHgyWX27CiyUKLNGq27v8S0mrksyTreT/xo7pg=="
-  "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.39.0.tgz"
-  "version" "5.39.0"
+"webpack@^4.0.0 || ^5.0.0", "webpack@^5.1.0", "webpack@^5.11.0", "webpack@^5.2.0", "webpack@>=2", "webpack@>=4.44.2", "webpack@4.x.x || 5.x.x":
+  "integrity" "sha512-msikozzXrG2Hdx+dElq0fyNvxPFsaM2dKLc/l+xkMmhO/1qwVJ9K9gY+fi/49MYWcpSP7alnK5Q78Evrd1LiqQ=="
+  "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.42.1.tgz"
+  "version" "5.42.1"
   dependencies:
     "@types/eslint-scope" "^3.7.0"
-    "@types/estree" "^0.0.47"
+    "@types/estree" "^0.0.48"
     "@webassemblyjs/ast" "1.11.0"
     "@webassemblyjs/wasm-edit" "1.11.0"
     "@webassemblyjs/wasm-parser" "1.11.0"
-    "acorn" "^8.2.1"
+    "acorn" "^8.4.1"
     "browserslist" "^4.14.5"
     "chrome-trace-event" "^1.0.2"
     "enhanced-resolve" "^5.8.0"
-    "es-module-lexer" "^0.4.0"
+    "es-module-lexer" "^0.6.0"
     "eslint-scope" "5.1.1"
     "events" "^3.2.0"
     "glob-to-regexp" "^0.4.1"
@@ -4983,7 +4978,7 @@
     "neo-async" "^2.6.2"
     "schema-utils" "^3.0.0"
     "tapable" "^2.1.1"
-    "terser-webpack-plugin" "^5.1.1"
+    "terser-webpack-plugin" "^5.1.3"
     "watchpack" "^2.2.0"
     "webpack-sources" "^2.3.0"
 
